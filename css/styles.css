@@ -435,17 +435,6 @@ header .container button {
   .metrics .container {
     gap: 5rem;
   }
-
-  .plans__values .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5rem;
-  }
-
-  .plans__card.active {
-    align-self: center;
-    order: 2;
-  }
 }
 
 @media (max-width: 560px) {
