@@ -36,6 +36,7 @@ ul {
 
 a {
   text-decoration: none;
+  display: block;
 }
 
 button {
@@ -83,6 +84,8 @@ header .container button {
 
 .hero {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 7.4rem;
 }
 
@@ -409,4 +412,86 @@ header .container button {
   background-color: #9f3919 !important;
   border: none;
   color: var(--white);
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 560px) {
+  nav {
+    display: none;
+  }
+
+  header .container img {
+    width: 10rem;
+  }
+
+  header .container .button-action {
+    width: 15rem;
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .hero .left {
+    margin: 0 auto;
+  }
+
+  .hero .left h1 {
+    font-size: 5rem;
+  }
+
+  .hero .right {
+    display: none;
+  }
+
+  .clients .container {
+    margin-top: 10rem;
+    display: none;
+  }
+
+  .subscription .container .left {
+    display: none;
+  }
+
+  .subscription .container {
+    text-align: center;
+  }
+
+  .metrics {
+    margin-top: 10rem;
+  }
+
+  .metrics .container .left {
+    display: none;
+  }
+
+  .metrics .container {
+    text-align: center;
+  }
+
+  .learn-more {
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+
+  .services .container {
+    flex-direction: column;
+  }
+
+  .plans .container {
+    flex-direction: column;
+    gap: 5rem;
+    text-align: center;
+  }
+
+  .plans__values .container {
+    flex-direction: column;
+    gap: 4rem;
+  }
 }
