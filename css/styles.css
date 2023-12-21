@@ -16,6 +16,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -124,8 +125,9 @@ header .container button {
 }
 
 .hero .right {
-  width: 580px;
-  height: 644px;
+  width: 100%;
+  max-width: 580px;
+  max-height: 644px;
 }
 
 .clients .container {
@@ -418,6 +420,34 @@ header .container button {
 }
 
 @media (max-width: 991px) {
+  nav {
+    display: none;
+  }
+
+  .hero {
+    margin-bottom: 10rem;
+  }
+
+  .subscription .container {
+    gap: 5rem;
+  }
+
+  .metrics .container {
+    gap: 5rem;
+  }
+
+  .plans__values .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+
+  .plans__card.active {
+    align-self: center;
+    order: 2;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (max-width: 560px) {
